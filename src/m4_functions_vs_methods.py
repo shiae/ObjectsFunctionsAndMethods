@@ -9,7 +9,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -82,7 +82,7 @@ def main():
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
+    try_methods()
 
     window.close_on_mouse_click()
 
@@ -171,8 +171,15 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    charles = rg.SimpleTurtle()
+    charles.pen = rg.Pen('brown', 5)
+    charles.forward(150)
+    charles.left(90)
+    charles.forward(50)
+    charles.backward(100)
+
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
