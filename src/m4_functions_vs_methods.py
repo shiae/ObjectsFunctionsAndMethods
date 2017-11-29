@@ -260,7 +260,7 @@ def try_methods_and_functions():
     stephen.pen = rg.Pen('red', 35)
     draw_many_squares(stephen, 8, 300, 60)
 
-
+    stephen.pen = rg.Pen('')
 
 
 
