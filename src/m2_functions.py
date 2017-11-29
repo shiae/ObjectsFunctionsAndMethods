@@ -33,8 +33,8 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
-    turtle4()
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
@@ -106,7 +106,7 @@ def turtle3():
 
 def turtle4():
     douglas = rg.SimpleTurtle()
-    douglas.pen = rg.Pen('LightSalmon', 10)
+    douglas.pen = rg.Pen('LemonChiffon', 10)
     douglas.forward(50)
     douglas.draw_circle(50)
 
@@ -175,7 +175,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
