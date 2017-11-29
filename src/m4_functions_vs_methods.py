@@ -83,6 +83,7 @@ def main():
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
     try_methods()
+    try_functions()
 
     window.close_on_mouse_click()
 
@@ -188,12 +189,17 @@ def try_methods():
 def try_functions():
     """
     Causes several SimpleTurtles to do the following:
-     -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
+     -- One jumps to (200, 100), then moves (while drawing) to (300, -30)
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+
+    jump_and_move_turtle(200, 100, 300, -30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
+
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
