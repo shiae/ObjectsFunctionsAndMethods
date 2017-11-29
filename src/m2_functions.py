@@ -33,6 +33,7 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
+    turtle4()
     turtle1()
     turtle3()
     turtle2()
@@ -103,6 +104,13 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    douglas = rg.SimpleTurtle()
+    douglas.pen = rg.Pen('LightSalmon', 10)
+    douglas.forward(50)
+    douglas.draw_circle(50)
+
+
 ########################################################################
 #
 # DONE: 2.
@@ -137,7 +145,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
