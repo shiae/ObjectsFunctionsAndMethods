@@ -35,6 +35,7 @@ def main():
 
     turtle1()
     turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -110,6 +111,15 @@ def turtle4():
     douglas.forward(50)
     douglas.draw_circle(50)
 
+
+def turtle5():
+    paul = rg.SimpleTurtle()
+    paul.pen = rg.Pen('PaleTurquoise2', 10)
+    paul.backward(100)
+
+    jeff = rg.SimpleTurtle()
+    jeff.pen = rg.Pen('peach puff', 10)
+    jeff.draw_regular_polygon(7, 30)
 
 ########################################################################
 #
@@ -191,7 +201,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
