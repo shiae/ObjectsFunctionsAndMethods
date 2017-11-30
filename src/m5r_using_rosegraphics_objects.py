@@ -40,19 +40,19 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that you can construct OTHER than Circle and Point:
-#                rectangle = rg.Rectangle
-#                turtle = rg.SimpleTurtle
+#                Rectangle
+#                SimpleTurtle
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
-#                       circle.attach_to()
-#                       circle.clone()
-#                       circle.detach_from()
+#                       attach_to
+#                       clone
+#                       detach_from
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                    circle.center
-#                    circle.defaults
-#                    circle.fill_color
+#                    center
+#                    defaults
+#                    fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
 #            It draws all the objects on the window
