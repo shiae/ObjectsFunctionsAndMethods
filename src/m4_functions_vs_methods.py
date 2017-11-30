@@ -248,25 +248,41 @@ def try_methods_and_functions():
 
     stephen = rg.SimpleTurtle()
     stephen.pen = rg.Pen('blue', 5)
+
+    # 1
     stephen.backward(150)
+
+    # 2
     stephen.speed = 1
     draw_many_squares(stephen, 2, 100, 30)
 
+    # 3
     stephen.speed = 5
     stephen.pen = rg.Pen('red', 5)
     draw_many_squares(stephen, 10, 50, 15)
 
+    # 4
     stephen.speed = 100
     stephen.pen = rg.Pen('red', 35)
     draw_many_squares(stephen, 8, 300, 60)
 
-    stephen.pen = rg.Pen('')
+    # 5
+    stephen.pen = rg.Pen('black', 3)
+
+    # 6
+    stephen.backward(200)
+
+    # 7
+    stephen.draw_circle(30)
+
+    # 8
+    stephen.draw_square(50)
 
 
 
 
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
