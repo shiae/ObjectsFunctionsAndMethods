@@ -10,20 +10,20 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              In the middle of the screen
+#              The top left corner of the screen
 #
 #        -- In what direction on the screen does the positive X-axis point?
 #              To the right
 #
 #        -- In what direction on the screen does the positive Y-axis point?
-#              Toward the top of the screen
+#              Toward the bottom of the screen
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
 #            window = rg.RoseWindow()
@@ -45,16 +45,22 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                       circle.attach_to()
+#                       circle.clone()
+#                       circle.detach_from()
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                    circle.center
+#                    circle.defaults
+#                    circle.fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            It draws all the objects on the window
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            It is necessary when you want the window to remain open until
+# the user clicks the window. Otherwise, the window will close immediately
+# after all of the code has been run.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -79,10 +85,6 @@ def main():
     example2()
     example3()
 
-window1 = rg.RoseWindow(200, 100)
-rectangle = rg.Rectangle
-turtle = rg.SimpleTurtle
-
 
 def example1():
     """ Displays an empty window. """
@@ -102,14 +104,14 @@ def example2():
     # Note: the y-axis goes DOWN from the TOP.
     # ------------------------------------------------------------------
     point1 = rg.Point(100, 150)
-    point2 = rg.Point(200, 50)
+   # point2 = rg.Point(200, 50)
 
     # ------------------------------------------------------------------
     # A RoseGraphics object is not associated with a window,
     # and hence are not drawn, until you ATTACH it to a window.
     # ------------------------------------------------------------------
     point1.attach_to(window)
-    point2.attach_to(window)
+   # point2.attach_to(window)
 
     # ------------------------------------------------------------------
     # And they still are not DRAWN until you RENDER the window.
@@ -139,6 +141,8 @@ def example3():
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
     circle.attach_to(window)
+
+
 
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.
