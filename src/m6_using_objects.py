@@ -15,6 +15,7 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
+    circle_and_rectangle()
 
 def two_circles():
     """
@@ -81,8 +82,44 @@ def circle_and_rectangle():
            75.0
            150.0
     """
+
+    window2 = rg.RoseWindow()
+
+    x = 200
+    y = 200
+    center = rg.Point(x, y)
+    circle = rg.Circle(center, 30)
+    circle.fill_color = 'blue'
+    circle.attach_to(window2)
+    print(circle.outline_thickness)
+    print(circle.fill_color)
+    print(center)
+    print(x)
+    print(y)
+
+
+    point1 = rg.Point(100, 150)
+    point2 = rg.Point(200, 50)
+    rectangle = rg.Rectangle(point1, point2)
+    rectangle.attach_to(window2)
+
+    rect_center = rectangle.get_center()
+    center_x = rect_center.x
+    center_y = rect_center.y
+
+    print(rectangle.outline_thickness)
+    print(rectangle.fill_color)
+    print(rect_center)
+    print(center_x)
+    print(center_y)
+
+
+
+    window2.render()
+    window2.close_on_mouse_click()
+
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -118,6 +155,12 @@ def lines():
     # TODO: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
+# window3 = rg.RoseWindow()
+#
+# line1 = rg.Line()
+#
+# window3.render()
+# window3.close_on_mouse_click()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
