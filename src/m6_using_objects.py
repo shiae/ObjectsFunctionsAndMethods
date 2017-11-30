@@ -33,7 +33,7 @@ def two_circles():
     circle1.fill_color = 'green'
     circle1.attach_to(window)
 
-    center2 = rg.Point(400, 400)
+    center2 = rg.Point(300, 100)
     circle2 = rg.Circle(center2, 40)
     circle2.attach_to(window)
 
@@ -42,7 +42,7 @@ def two_circles():
     window.close_on_mouse_click()
 
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    # DONE: 2. Implement this function, per its doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
     #    -- File  COLORS.txt  lists all legal color-names.
     # Put a statement in   main   to test this function
